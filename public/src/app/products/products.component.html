@@ -1,0 +1,15 @@
+<router-outlet ></router-outlet>
+<div id="products">
+  <span *ngIf="products.length > 0">
+    <div class="product" *ngFor="let product of products">
+      <img src="{{product.url}}" class="productImg">
+      <div class="productDesc">
+        <h3>{{product.title}}</h3>
+        <h2>{{'$'+product.price}}</h2>
+        <button [routerLink]="['/products/edit/'+product._id]">Edit</button>
+        <button (click)="deleteProduct(product._id)">Delete</button>
+      </div>
+    </div>
+  </span>
+</div>
+

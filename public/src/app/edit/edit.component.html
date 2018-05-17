@@ -1,0 +1,14 @@
+<div id="edit">
+  <form (submit)="updateProduct(id)">
+    <p>Title: <input type="text" name="product.title" [(ngModel)]='product.title'></p>
+    <p>Price: <input type="number" name="product.price" [(ngModel)]='product.price'></p>
+    <p>URL: <input type="text" name="product.url" [(ngModel)]='product.url'></p>
+    <input class="submit" type="submit" value="Update"> <button (click)="deleteProduct(product.id)">Delete</button>
+  </form>
+  <span *ngIf="errors">
+    <span *ngFor="let error of errors">
+      <span *ngIf="error.title"><p>{{error.title.message}}</p></span>
+      <span *ngIf="error.price"><p>{{error.price.message}}</p></span>
+    </span>
+  </span>
+</div>

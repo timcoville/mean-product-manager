@@ -1,0 +1,19 @@
+form {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: .9em;
+}
+input {
+    width: 350px;
+    margin-left: 10px;
+}
+
+
+
+.submit {
+    width:65px;
+    margin-right: 10px;
+    margin-left: 0px;
+}

@@ -1,0 +1,25 @@
+.product {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    vertical-align: top;
+    border-radius: 25px;
+    font-family: sans-serif;
+
+}
+
+.product:first-child {
+    margin-left: 0;
+}
+
+.productImg {
+    height: 150px;
+}
+
+.productDesc  {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+    margin: 0 0 0 15px;
+}
